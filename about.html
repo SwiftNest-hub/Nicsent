@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About | {brand}</title>
+    <meta name="description" content="Our story, contact details, delivery and FAQs.">
+    <meta property="og:title" content="{brand}">
+    <meta property="og:description" content="Our story, contact details, delivery and FAQs.">
+    <meta property="og:image" content="og-image.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body id="top">
+    <header id="nav"></header>
+
+    <main>
+      <section class="page-banner about-split">
+        <div>
+          <h1>Fragrance Is Personal.</h1>
+        </div>
+        <p>
+          We believe the right fragrance does more than smell beautiful. It helps express your personality,
+          creates memories, and leaves an impression long after you’ve left the room. (Starter copy: replace
+          with the seller’s story.)
+        </p>
+      </section>
+
+      <section>
+        <div class="theme">
+          <div>
+            <h3>Your Identity</h3>
+            <p>A scent says who you are before you speak.</p>
+          </div>
+          <div>
+            <h3>Your Mood</h3>
+            <p>Fresh for Monday, warm for Friday night.</p>
+          </div>
+          <div>
+            <h3>Your Signature</h3>
+            <p>The one fragrance people link to you.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="dark contact" id="contact">
+        <div>
+          <h2>Contact</h2>
+          <p style="margin: 1rem 0;">Location: <span data-cfg="location"></span></p>
+          <a class="btn" data-wa href="#">Chat on WhatsApp</a>
+          <a class="row" data-ig href="#">Instagram</a>
+          <a class="row" data-tt href="#">TikTok</a>
+        </div>
+
+        <form id="contactForm">
+          <label>
+            Name
+            <input name="name" required>
+          </label>
+          <label>
+            Email or phone
+            <input name="contact" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send via WhatsApp</button>
+          <small>This opens WhatsApp with your message ready. Nothing is sent until you press send there.</small>
+        </form>
+      </section>
+
+      <section class="faq">
+        <div class="head">
+          <h2>Questions</h2>
+        </div>
+
+        <button aria-expanded="false">How can I place an order?</button>
+        <div class="ans">
+          <p>Open a perfume in the shop and choose Order on WhatsApp. The seller replies to confirm.</p>
+        </div>
+
+        <button aria-expanded="false">Do you deliver?</button>
+        <div class="ans">
+          <p data-cfg="delivery"></p>
+        </div>
+
+        <button aria-expanded="false">How do I choose a fragrance?</button>
+        <div class="ans">
+          <p>Start with the mood tiles on the home page, or message us what you like.</p>
+        </div>
+
+        <button aria-expanded="false">Can I enquire about a particular perfume?</button>
+        <div class="ans">
+          <p>Yes. Message us on WhatsApp.</p>
+        </div>
+
+        <button aria-expanded="false">What payment methods are accepted?</button>
+        <div class="ans">
+          <p data-cfg="payment"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="foot"></footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+

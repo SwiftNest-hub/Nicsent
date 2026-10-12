@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | {brand}</title>
+    <meta name="description" content="Perfumes and fragrances in Ghana. Order on WhatsApp.">
+    <meta property="og:title" content="{brand}">
+    <meta property="og:description" content="Perfumes and fragrances in Ghana. Order on WhatsApp.">
+    <meta property="og:image" content="og-image.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body id="top">
+    <header id="nav"></header>
+
+    <main>
+      <div id="welcome" role="dialog" aria-label="Welcome">
+        <button class="skip" data-enter>Skip</button>
+        <div class="in-wrap">
+          <p class="wt">WELCOME TO</p>
+          <h2>NIC'S SIGNATURE SCENTS</h2>
+          <div class="bt">
+            <img src="assets/images/hero-perfume.jpg" alt="Perfume bottle display" width="150" height="180">
+          </div>
+          <p class="t">A Scent That Speaks Before You Do.</p>
+          <button class="btn" data-enter>DISCOVER YOUR SCENT</button>
+        </div>
+      </div>
+
+      <section class="hero">
+        <div>
+          <p class="eyebrow">YOUR NEXT SIGNATURE SCENT</p>
+          <h1>Leave a Little<br>Fragrance Behind.</h1>
+          <p class="lead">Discover fragrances that match your mood, elevate your presence, and make every moment memorable.</p>
+          <div class="ctas">
+            <a class="btn" href="shop.html">Explore Collection</a>
+            <a class="btn ghost" href="about.html">Meet the Brand</a>
+          </div>
+        </div>
+
+        <div class="art">
+          <img src="assets/images/hero-perfume.jpg" alt="Luxury perfume bottle shot" width="500" height="600">
+        </div>
+      </section>
+
+      <section>
+        <div class="head">
+          <h2>Scents Worth Remembering</h2>
+          <p>Find the fragrance that feels like you. Sample products, replace in js/products.js.</p>
+        </div>
+        <div class="grid" id="featured"></div>
+      </section>
+
+      <section class="dark">
+        <div class="head">
+          <h2>Shop by mood</h2>
+        </div>
+        <div class="moods">
+          <a href="shop.html?mood=romantic" style="--c: #C90062">Soft &amp; Romantic</a>
+          <a href="shop.html?mood=bold" style="--c: #3a1226">Bold &amp; Confident</a>
+          <a href="shop.html?mood=fresh" style="--c: #FF1681">Fresh &amp; Clean</a>
+          <a href="shop.html?mood=warm" style="--c: #8a6f33">Warm &amp; Sensual</a>
+          <a href="shop.html?mood=everyday" style="--c: #7a0a3e">Everyday Luxury</a>
+          <a href="shop.html?mood=special" style="--c: #2a1a24">Special Occasions</a>
+        </div>
+      </section>
+
+      <section class="dark statement" style="border-top: 1px solid var(--mag);">
+        <h2 class="rv">More Than a Fragrance. <em>It’s Your Signature.</em></h2>
+        <p class="rv">Every scent tells a story. Discover one that feels unmistakably yours.</p>
+      </section>
+
+      <section>
+        <div class="benefits">
+          <div>
+            <h3>Carefully Selected Fragrances</h3>
+            <p>Chosen by the seller. Edit this text.</p>
+          </div>
+          <div>
+            <h3>Convenient Ordering</h3>
+            <p>Order through WhatsApp.</p>
+          </div>
+          <div>
+            <h3>Responsive Support</h3>
+            <p>Ask about any perfume before you buy.</p>
+          </div>
+          <div>
+            <h3>Delivery Options</h3>
+            <p data-cfg="delivery"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="head">
+          <p class="eyebrow">WHY CUSTOMERS LOVE US</p>
+          <h2>Fragrance memories people keep talking about.</h2>
+        </div>
+
+        <div class="review-grid">
+          <article class="review rv" style="--d: 0ms;">
+            <div class="stars" aria-label="5 star review">★★★★★</div>
+            <p>“The scent lasts all day and feels so premium. It gives me that confident, polished finish every time.”</p>
+            <div class="person">
+              <strong>Abena M.</strong>
+              <span>Accra</span>
+            </div>
+          </article>
+
+          <article class="review rv" style="--d: 120ms;">
+            <div class="stars" aria-label="5 star review">★★★★★</div>
+            <p>“I loved the way the packaging and fragrance felt luxurious. Delivery was smooth and the product was exactly as described.”</p>
+            <div class="person">
+              <strong>Kojo T.</strong>
+              <span>Kumasi</span>
+            </div>
+          </article>
+
+          <article class="review rv" style="--d: 240ms;">
+            <div class="stars" aria-label="5 star review">★★★★★</div>
+            <p>“This is my go-to scent for evenings out. It smells rich, elegant, and people always ask what I’m wearing.”</p>
+            <div class="person">
+              <strong>Selena A.</strong>
+              <span>Takoradi</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="pinkbg cta">
+        <h2>Your Signature Scent Is Waiting.</h2>
+        <a class="btn" href="shop.html">Explore All Fragrances</a>
+      </section>
+    </main>
+
+    <footer id="foot"></footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+

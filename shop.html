@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop | {brand}</title>
+    <meta name="description" content="Browse perfumes for women, men and unisex. Order on WhatsApp.">
+    <meta property="og:title" content="{brand}">
+    <meta property="og:description" content="Browse perfumes for women, men and unisex. Order on WhatsApp.">
+    <meta property="og:image" content="og-image.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body id="top">
+    <header id="nav"></header>
+
+    <main>
+      <section class="page-banner">
+        <h1>Find Your Signature Scent.</h1>
+        <p class="lead" style="max-width: 40ch; margin-top: 1rem;">
+          From fresh and effortless to bold and unforgettable, explore your next favourite fragrance.
+        </p>
+      </section>
+
+      <section>
+        <div class="tools">
+          <button data-cat="all" aria-pressed="true">All</button>
+          <button data-cat="women" aria-pressed="false">Women’s</button>
+          <button data-cat="men" aria-pressed="false">Men’s</button>
+          <button data-cat="unisex" aria-pressed="false">Unisex</button>
+
+          <input id="search" type="search" placeholder="Search name or brand" aria-label="Search fragrances">
+          <select id="sort" aria-label="Sort by price">
+            <option value="">Sort</option>
+            <option value="asc">Price: low to high</option>
+            <option value="desc">Price: high to low</option>
+          </select>
+        </div>
+
+        <p id="count" aria-live="polite" style="margin-bottom: 1.5rem;"></p>
+        <div class="grid" id="grid"></div>
+      </section>
+
+      <div id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mt">
+        <div class="sheet"></div>
+      </div>
+    </main>
+
+    <footer id="foot"></footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/shop.js"></script>
+  </body>
+</html>
+
